@@ -14,7 +14,7 @@ class ApplicationController < Sinatra::Base
 
     post '/posts' do #creates a blog post
       @post = Post.create(params)
-      redirect to '/post'
+      redirect to '/posts'
     end
 
     get '/posts' do #loads index page with listing of all blog posts
